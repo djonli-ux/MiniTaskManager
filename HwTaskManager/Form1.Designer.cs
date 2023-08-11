@@ -28,12 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            taskFeild = new ListBox();
+            endTaskBtn = new Button();
+            SuspendLayout();
+            // 
+            // taskFeild
+            // 
+            taskFeild.FormattingEnabled = true;
+            taskFeild.ItemHeight = 20;
+            taskFeild.Location = new Point(12, 12);
+            taskFeild.Name = "taskFeild";
+            taskFeild.Size = new Size(776, 584);
+            taskFeild.TabIndex = 0;
+            // 
+            // endTaskBtn
+            // 
+            endTaskBtn.Location = new Point(694, 620);
+            endTaskBtn.Name = "endTaskBtn";
+            endTaskBtn.Size = new Size(94, 29);
+            endTaskBtn.TabIndex = 1;
+            endTaskBtn.Text = "End Task";
+            endTaskBtn.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 691);
+            Controls.Add(endTaskBtn);
+            Controls.Add(taskFeild);
+            Name = "Form1";
+            Text = "Form1";
+            Load += Form1_Load;
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private ListBox taskFeild;
+        private Button endTaskBtn;
     }
 }
