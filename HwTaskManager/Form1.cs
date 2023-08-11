@@ -2,9 +2,9 @@ using System.Diagnostics;
 
 namespace HwTaskManager
 {
-    public partial class Form1 : Form
+    public partial class TaskManager : Form
     {
-        public Form1()
+        public TaskManager()
         {
             InitializeComponent();
         }
@@ -37,6 +37,17 @@ namespace HwTaskManager
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void runNewTaskToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (frmRunTasks frm = new frmRunTasks()) 
+            {
+                if (frm.ShowDialog() == DialogResult.OK)
+                { 
+                    GetAllProcesses(); 
+                }
             }
         }
     }

@@ -1,6 +1,6 @@
 ﻿namespace HwTaskManager
 {
-    partial class Form1
+    partial class TaskManager
     {
         /// <summary>
         ///  Required designer variable.
@@ -77,8 +77,9 @@
             runNewTaskToolStripMenuItem.Name = "runNewTaskToolStripMenuItem";
             runNewTaskToolStripMenuItem.Size = new Size(224, 26);
             runNewTaskToolStripMenuItem.Text = "Run new task";
+            runNewTaskToolStripMenuItem.Click += runNewTaskToolStripMenuItem_Click;
             // 
-            // Form1
+            // TaskManager
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -87,8 +88,10 @@
             Controls.Add(taskFeild);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
-            Name = "Form1";
-            Text = "Form1";
+            MinimizeBox = false;
+            Name = "TaskManager";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Task Manager";
             Load += Form1_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
