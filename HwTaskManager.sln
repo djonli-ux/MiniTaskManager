@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HwTaskManager", "HwTaskManager\HwTaskManager.csproj", "{EDE8C250-D5CC-4C80-9CED-FA3629214E39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDE8C250-D5CC-4C80-9CED-FA3629214E39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDE8C250-D5CC-4C80-9CED-FA3629214E39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDE8C250-D5CC-4C80-9CED-FA3629214E39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDE8C250-D5CC-4C80-9CED-FA3629214E39}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {05DA980D-1204-4FBE-95C4-8E375EED1B10}
+	EndGlobalSection
+EndGlobal
