@@ -30,7 +30,6 @@ namespace HwTaskManager
                 }
                 catch (Exception ex)
                 {
-
                     MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
